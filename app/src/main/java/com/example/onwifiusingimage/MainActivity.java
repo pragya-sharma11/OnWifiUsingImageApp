@@ -20,7 +20,14 @@ public class MainActivity extends AppCompatActivity {
         i.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if()
+                if(wifi == false){
+                    wf.setWifiEnabled(true);
+                    i.setImageResource(R.drawable.t3);
+                }
+                else{
+                    wf.setWifiEnabled(false);
+                    i.setImageResource(R.drawable.t2);
+                }
             }
         });
     }
