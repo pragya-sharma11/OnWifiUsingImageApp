@@ -23,10 +23,12 @@ public class MainActivity extends AppCompatActivity {
                 if(wifi == false){
                     wf.setWifiEnabled(true);
                     i.setImageResource(R.drawable.t3);
+                    wifi = true;
                 }
                 else{
                     wf.setWifiEnabled(false);
                     i.setImageResource(R.drawable.t2);
+                    wifi = false;
                 }
             }
         });
